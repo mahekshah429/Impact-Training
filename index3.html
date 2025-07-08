@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Bubbling</title>
+</head>
+<body>
+   <!-- <div id="parent">
+        <button id="child">Click me</button>
+    </div>
+    <button onclick="greet()">Click me</button>
+    -->
+    <button id="mybtn">Click me</button>
+    <script>
+    // event bubbling example
+
+   /*     document.getElementById("parent").addEventListener("click", function(event) {
+            console.log("Parent clicked");
+        },true);
+
+        document.getElementById("child").addEventListener("click", function(event) {
+            console.log("Child clicked");
+        });
+        // onclick 
+        function greet() {
+            alert("Hello, World!");
+        }
+    */  
+
+
+    //let btn=document.getElementById("mybtn");
+    //btn.onclick=function greet() {
+    //alert("Hello, World!");}
+    
+    
+    // ek he handler assign kr sakta h
+    // naya wala handler pehle waale ko replace(overwrite) kr dega
+    // add event listner ]
+    // syntax elment.addEventListener(event, function, useCapture);
+     /*let btn=document.getElementById("mybtn");
+     btn.addEventListener("click", function() {
+        alert("Clicked with modern method of js");
+     });
+*/
+    // remove event listener
+    function sayhi  () {
+        alert("Hello, World!");
+    }
+    let btn=document.getElementById("mybtn");
+    btn.addEventListener("click", sayhi);
+    setTimeout(() => {
+       btn2.removeEventListener("click", sayhi); 
+    }, 5000);
+
+</script>
+
+</body>
+</html>

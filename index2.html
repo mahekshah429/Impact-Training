@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <a href="www.google.com" id ="link">go to google</a> 
+    <input type="user" type="text" placeholder="Enter your name"> 
+    
+    
+    <div id="box" >
+    <p id="text" style="color: blue;">This is a paragrapgh</p>
+</div>
+    
+
+
+
+<div class="old-class" id="box">
+    <p id="text" style="color: blue;">This is a paragrapgh</p>
+</div>
+-->
+
+<div id="btn" class="primary">Click me</div>
+    <script>
+        let btn = document.getElementById("btn");
+        // add class
+        btn.classList.add("rounded");
+        // remove class
+        btn.classList.remove("primary");
+        // toggle class
+        //btn.classList.toggle("active");
+        
+        console.log(btn.classList.contains("active")); // true
+        
+    /*    
+        let element = document.getElementById("box");
+        console.log(element.className);
+        element.className = "new-class-value";
+        console.log(element.className);
+
+    //manipulating styles by js  
+        element.style.cssText = "background-color: red; width: 300px; height: 200px; border: 2px solid black; border-radius: 10px;";
+        let style = window.getComputedStyle(element);
+        console.log(style.color);
+     
+    // get attribute
+     let element = document.getElementById("link");
+    let result = element.getAttribute("href");
+    console.log(result);
+    
+    
+    // set attribute
+    let element = document.getElementById("link");
+        let result = element.setAttribute("href", "https://www.google.com");
+        let value = element.getAttribute("href");
+        console.log(value); 
+        
+        // hash attribute
+        let element = document.getElementById("user");
+        let result = element.hasAttribute("class");
+        console.log(result); 
+        
+        
+        // remove attribute
+        let element = document.getElementById("user");
+        let result = element.removeAttribute("class");
+        console.log(result);
+        
+        let element = document.getElementById("box");
+        element.style.backgroundColor = "red";
+        element.style.width = "300px";
+        element.style.height = "200px";
+        element.style.border = "2px solid black";
+        
+        */
+        
+        
+
+    </script>
+    
+    
+
+</body>
+</html>

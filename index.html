@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box">
+        <div class="message">    
+            <h2>Heading 1</h2>
+            <p>This is a paragraph inside the box.</p>
+            <span>end of era</span>
+        </div>
+    </div>
+
+    <ul id="fruits">
+            <li>Apple</li>
+        </ul>
+    
+
+<!--This code demonstrates how to create an HTML element using JavaScript
+ for creating an html element
+ types of elment as a param
+ -->   
+    <script>
+        let newdiv = document.createElement('div'); 
+        newdiv.textContent = 'Hello World!'; 
+        document.getElementById('box').appendChild(newdiv);
+
+//  Append the new element to the body or any other container
+// kis parents ke andar append karna hai
+// elment which we want to insert
+
+// text content
+//element ka andae ka text content set krna 
+
+//inner html
+//element ka andae ka html code get set krna
+
+//document.getElementById('message').innerHTML = '<p>Hello How are <strong>you</p>';
+
+    let newli= document.createElement('li');
+    newlli.textContent = "grapes";
+    let list = document.getElementById("fruits");
+    let firstitem=list.firstElementChild; 
+    list.insertBefore(newli, firstitem);
+    
+    </script>    
+</body>
+</html>

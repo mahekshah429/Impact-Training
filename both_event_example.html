@@ -1,0 +1,42 @@
+// box using addeventListener and removeEventListener
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Box Click Example</title>
+    <style>
+        #mybox {
+            width: 100px;
+            height: 40px;
+            font-size: 18 px;
+            background-color: red;
+            color: white;
+            cursor: pointer;
+            border: 2px solid black;
+            border-radius: 8px;
+            text-align: center;
+            line-height: 40px; 
+        }
+
+        #mybox:hover {
+            background-color: darkred;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="mybox">Click Me</div>
+
+    <script>
+        function sayhi() {
+            alert("Hello, World!");
+        }
+
+        let box = document.getElementById("mybox");
+        box.addEventListener("click", sayhi);
+        setTimeout(() => {
+            box.removeEventListener("click", sayhi);
+            box.style.opacity = "0.6"; box.style.cursor = "pointer"}, 5000);
+    </script>
+
+</body>
+</html>
